@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Detail</title>
+    <link rel="icon" type="image/jpg" href="./assets/images/logo.jpg"> 
+  <link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./js/property.js" defer></script>
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+   <!-- Top Information Section -->
+<section class="fixed-top">
+   <div class="container-fluid top bg-light py-2">
+    <div class="container d-flex align-items-center justify-content-between">
+        <!-- Left Section: Email and Phone -->
+        <div class="col-12 col-sm d-flex justify-content-center justify-content-sm-start mb-2 mb-sm-0">
+            <span class="me-3 text-nowrap">
+                <i class="bi bi-envelope-fill text-success"></i> email@example.com
+            </span>
+            <span class="text-nowrap">
+                <i class="bi bi-telephone-fill text-success"></i> (123) 456-7890
+            </span>
+        </div>
+
+        <!-- Right Section: Contact Button -->
+        <div class="col-12 col-sm-auto d-flex justify-content-center justify-content-sm-end">
+            <a href="./subPages/contact.html" class="btn btn-success">Contact Us</a>
+        </div>
+    </div>
+</div>
+  
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm ">
+      <div class="container">
+        <!-- Navbar Brand/Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <i class="bi bi-house-fill me-2 text-success"></i>
+          <span class="fw-bold fs-4">Real Estate</span>
+        </a>
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links and Icons -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Centered Nav Links -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="property.html">Property</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./subPages/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./subPages/contact.html">Contact</a>
+            </li>
+          </ul>
+          <!-- Right Section: Search and User Icons with Dropdown -->
+          <div class="d-flex">
+            <a href="property.html" class="icon-container me-3 bg-success text-white">
+              <i class="bi bi-search"></i>
+            </a>
+            <div class="dropdown ">
+              <a href="#" class="icon-container text-success dropdown-toggle border border-success" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle text-success"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="./subPages/profile.html">Profile</a></li>
+                <li><a class="dropdown-item" href="./subPages/login.html">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+    <div class="container mt-5 py-5">
+        
+        <div class="row mt-5" id="property-detail"></div>
+
+        <h2 class="mt-5">Related Properties</h2>
+        <div class="row" id="related-products"></div>
+    </div>
+
+    <!-- Footer Section -->
+<footer class=" footer py-5 mt-5">
+    <div class="container text-center">
+  
+      <div class="row text-start">
+        <!-- First Section: Logo, Paragraph, Social Media Icons -->
+        <div class="col-md-3 mb-3">
+          <div class="d-flex ">
+            <i class="bi bi-house-door-fill  text-success"></i> <!-- Bootstrap Real Estate Icon -->
+            <h5 class="ms-2">Real Estate</h5>
+          </div>
+          <p class="link">Providing the best real estate services for finding your dream home. Our team is dedicated to making the buying and selling process as smooth as possible.</p>
+          <div class="social-icons">
+            <a href="#" class="text-success mx-1"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="#" class="text-success mx-1"><i class="bi bi-twitter fs-4"></i></a>
+            <a href="#" class="text-success mx-1"><i class="bi bi-instagram fs-4"></i></a>
+          </div>
+        </div>
+  
+        <!-- Second Section: Related Links -->
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">Related Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="./about.html" class="text-white mb-2 link">About Us </a></li>
+            <li><a href="./contact.html" class="text-white mb-2 link">Contact Us</a></li>
+            <li><a href="./property.html" class="text-white mb-2 link">Property List</a></li>
+      
+          </ul>
+        </div>
+  
+        <!-- Third Section: Location and Phone -->
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p><i class="bi bi-geo-alt-fill link text-success me-1"></i> Gerji Sub City, Addis Ababa, Ethiopia</p>
+          <p><i class="bi bi-telephone-fill link text-success me-1"></i> Phone: (+2519)-34-56-78-90</p>
+        </div>
+  
+        <!-- Fourth Section: Additional Information -->
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">Our Services</h5>
+          <ul class="list-unstyled">
+            <li>Home Buying</li>
+            <li>Home Selling</li>
+            <li>Consultation</li>
+            <li>Market Analysis</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom mt-4">
+        <p>&copy; 2024 Your Real Estate Company. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+     <!-- Back to Top Button -->
+ <button id="back-to-top" class="btn btn-success" style="display: none;">
+  <i class="bi bi-arrow-up"></i> <!-- Bootstrap Icon for arrow -->
+</button>
+    <script>
+        // Function to get URL parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const propertyId = getQueryParam('id');
+            const selectedProperty = property.find(prop => prop.id == propertyId);
+            
+            if (selectedProperty) {
+                // Display the selected property
+                const propertyDetailContainer = document.getElementById('property-detail');
+                propertyDetailContainer.innerHTML = `
+                    <div class="col-md-6">
+                        <img src="${selectedProperty.image}" class="img-fluid mb-3" alt="${selectedProperty.title}">
+                    </div>
+                    <div class="col-md-6 ">
+                        <h5 class="card-title fw-bold fs-4 mb-3">${selectedProperty.title}</h5>
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                        </div>
+                        <p class="card-text text-muted ">${selectedProperty.description}</p>
+    <div class="mb-4 row">
+    <div class="col-lg-6 mb-2">
+        <span class="rounded bg-success border-start border-success border-4 bg-opacity-10 p-2 d-flex align-items-center">
+            <i class="bi bi-coin text-success px-1"></i>
+            <span>${selectedProperty.price}</span>
+        </span>
+    </div>
+    <div class="col-lg-6 mb-2">
+        <span class="rounded bg-success bg-opacity-10 p-2 border-start border-success border-4 d-flex align-items-center">
+            <i class="bi bi-geo-alt-fill text-success px-1"></i>
+            <span>${selectedProperty.location}</span>
+        </span>
+    </div>
+</div>
+
+
+                        
+                        <p><strong>Bedrooms:</strong> ${selectedProperty.bedrooms}</p>
+                        <p><strong>Bathrooms:</strong> ${selectedProperty.bathrooms}</p>
+                        <p><strong>Size:</strong> ${selectedProperty.squareKm} km²</p>
+                        <div class="mt-4">
+                            <a href="property.html" class="btn border border-success">Back to Properties</a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=${selectedProperty.ownerEmail}" class="btn btn-success" target="_blank">Book Now</a>
+                        </div>
+                    </div>
+                `;
+
+                // Display related products based on the category of the selected property
+                displayRelatedProducts(selectedProperty.category);
+            }
+        });
+
+        // Smooth scroll to top function
+        function smoothScrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+  
+     <script src="./js/spinner.js"></script>
+     <script src="./assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

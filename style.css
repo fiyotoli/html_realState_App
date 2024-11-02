@@ -1,0 +1,218 @@
+
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+/* Apply Poppins font to all elements */
+* {
+  font-family: 'Poppins', sans-serif; /* Fallback to sans-serif if Poppins is not available */
+}
+
+/* Additional styles can go here */
+
+
+  * {
+    margin: 0;                /* Remove default margin */
+    padding: 0;               /* Remove default padding */
+    box-sizing: border-box;   /* Include padding and border in total width and height */
+}
+
+/* Ensure html and body fill the viewport */
+html, body {
+    min-width: 100%;             /* Set width to 100% of the viewport */
+    min-height: 100%;             /* Set height to 100% of the viewport */
+    overflow-x: hidden;       /* Prevent horizontal scrolling */
+         /* Allow vertical scrolling if necessary */
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.product-card {
+  margin-bottom: 30px;
+}
+/* Style for the spinner */
+.spinner-wrapper {
+  background-color: rgba(0, 0, 0, 0.8); /* Changed to a valid color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+/* External CSS File (style.css) */
+
+
+
+.dropdown-item:hover {
+    background-color: transparent !important; /* Change to desired color if needed */
+    color: #000; /* Set your desired text color */
+}
+.dropdown-item:active{
+  background-color: #28a745; 
+}
+/* Optional: If you want to change the background color when not active */
+/* Remove default background color when a dropdown item is clicked */
+.dropdown-item:focus {
+  color: #ffffff !important;
+    background-color: #28a745 !important; /* Ensure it's transparent by default */
+}
+
+/* Optional: For a selected state */
+.dropdown-item.selected {
+    background-color: #28a745; /* Change this to your desired selected color */
+    color: #ffffff; /* Change to your desired text color */
+}
+
+/* Style for the Back to Top button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* Ensures it appears above other content */
+  border-radius: 50%; /* Makes the button round */
+  width: 50px; /* Button size */
+  height: 50px; /* Button size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s; /* Smooth transition for visibility */
+}
+/* Navbar Active Link */
+
+    .navbar-nav .nav-link.active {
+      font-weight: bold;
+      color: #28a745 !important; /* Adjusts to Bootstrap's success color */
+    }
+
+.nav-link.active {
+    color: #28a745 !important; /* Success color for active link */
+    font-weight: bold;
+  }
+  
+  /* Hover Effect for Nav Links */
+  .nav-link {
+    color: #333;
+    transition: color 0.3s;
+   
+  }
+  
+  .nav-link:hover {
+    color: #28a745;
+    font-weight: bold;
+  }
+
+  
+  /* Icon Container with Shadow */
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+  
+  }
+  
+  .icon-container:hover {
+    background-color: #e9ecef;
+  }
+  /* Remove the border from the accordion button */
+.accordion-button {
+  border: none; /* Remove default border */
+  background-color: transparent; /* Make background transparent */
+}
+
+/* Optional: Remove focus outline */
+.accordion-button:focus {
+  box-shadow: none; /* Remove default focus shadow */
+}
+
+
+  /* Custom CSS to hide default icons */
+.accordion-button:not(.collapsed)::after {
+    display: none; /* Hide the collapse icon */
+}
+.accordion-button::after {
+    display: none; /* Hide the collapse icon */
+}
+.accordion-button {
+    background-color: transparent !important; /* Remove default background color */
+    color: #212529; /* Ensure text color is set appropriately */
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important; /* Ensure the opened button has no background */
+}
+
+
+  .footer{
+    background: #060415;
+    color: white;
+  }
+  .footer-links a {
+    text-decoration: none;
+    color: #cfd8dc; /* Light gray color for links */
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #fff; /* Change color on hover */
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  .social-icons a {
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .social-icons a:hover {
+    color: #28a745; /* Change color on hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px; /* Space above copyright text */
+  }
+  .link{
+    text-decoration: none;
+    opacity: .7;
+  }
+
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+/* Apply Poppins font to all elements */
+* {
+  font-family: 'Poppins', sans-serif; /* Fallback to sans-serif if Poppins is not available */
+}
+
+/* Additional styles can go here */
+
+
+  * {
+    margin: 0;                /* Remove default margin */
+    padding: 0;               /* Remove default padding */
+    box-sizing: border-box;   /* Include padding and border in total width and height */
+}
+
+/* Ensure html and body fill the viewport */
+html, body {
+    min-width: 100%;             /* Set width to 100% of the viewport */
+    min-height: 100%;             /* Set height to 100% of the viewport */
+    overflow-x: hidden;       /* Prevent horizontal scrolling */
+         /* Allow vertical scrolling if necessary */
+}
