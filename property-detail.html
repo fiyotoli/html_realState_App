@@ -24,7 +24,7 @@
         <!-- Left Section: Email and Phone -->
         <div class="col-12 col-sm d-flex justify-content-center justify-content-sm-start mb-2 mb-sm-0">
             <span class="me-3 text-nowrap">
-                <i class="bi bi-envelope-fill text-success"></i> email@example.com
+                <i class="bi bi-envelope-fill text-success"></i>realState@gmail.com
             </span>
             <span class="text-nowrap">
                 <i class="bi bi-telephone-fill text-success"></i> (123) 456-7890
@@ -91,7 +91,7 @@
         
         <div class="row mt-5" id="property-detail"></div>
 
-        <h2 class="mt-5">Related Properties</h2>
+        <h2 class="mt-5 mb-4">Related <span class="text-success">Properties</span></h2>
         <div class="row" id="related-products"></div>
     </div>
 
@@ -181,14 +181,14 @@
                             <i class="bi bi-star-half text-success"></i>
                         </div>
                         <p class="card-text text-muted ">${selectedProperty.description}</p>
-    <div class="mb-4 row">
-    <div class="col-lg-6 mb-2">
+    <div class=" row">
+    <div class="col-lg-6  px-2 mb-3">
         <span class="rounded bg-success border-start border-success border-4 bg-opacity-10 p-2 d-flex align-items-center">
             <i class="bi bi-coin text-success px-1"></i>
             <span>${selectedProperty.price}</span>
         </span>
     </div>
-    <div class="col-lg-6 mb-2">
+    <div class="col-lg-6 px-2 mb-3">
         <span class="rounded bg-success bg-opacity-10 p-2 border-start border-success border-4 d-flex align-items-center">
             <i class="bi bi-geo-alt-fill text-success px-1"></i>
             <span>${selectedProperty.location}</span>
@@ -202,7 +202,7 @@
                         <p><strong>Bathrooms:</strong> ${selectedProperty.bathrooms}</p>
                         <p><strong>Size:</strong> ${selectedProperty.squareKm} km²</p>
                         <div class="mt-4">
-                            <a href="property.html" class="btn border border-success">Back to Properties</a>
+                            <a href="property.html" class="btn border border-success me-2 backBtn">Back to Properties</a>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=${selectedProperty.ownerEmail}" class="btn btn-success" target="_blank">Book Now</a>
                         </div>
                     </div>

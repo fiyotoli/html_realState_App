@@ -216,3 +216,32 @@ html, body {
     overflow-x: hidden;       /* Prevent horizontal scrolling */
          /* Allow vertical scrolling if necessary */
 }
+/* form style */
+.container .error {
+  color: red;
+  font-size: 15px;
+  width: 100%; /* Set to 100% to occupy the full width of the container */
+  text-align: left;
+  margin-top: 5px; /* Adjust margin for better spacing */
+  text-transform: capitalize;
+ 
+}
+
+/* input search style */
+.input{
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* property detail page btn style */
+.backBtn:hover{
+  background: #099144;
+  color: white;
+  transition: all;
+
+}
+
+/* property page filter input bg style */
+
+
+
+

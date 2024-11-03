@@ -10,7 +10,7 @@ const property = [
 
         bedrooms: 3,
         squareKm: 1.5,
-        location: "Downtown Addis Ababa",
+        location: "Downtow",
         category: "Apartment"
     },
     {
@@ -23,7 +23,7 @@ const property = [
         bathrooms: 3,
         bedrooms: 4,
         squareKm: 2.0,
-        location: "Bole, Addis Ababa",
+        location: "Bole",
         category: "House"
     },
     {
@@ -36,7 +36,7 @@ const property = [
         bathrooms: 5,
         bedrooms: 6,
         squareKm: 3.5,
-        location: "Old Airport, Addis Ababa",
+        location: "Old Airport",
         category: "Villa"
     },
     {
@@ -49,7 +49,7 @@ const property = [
         bathrooms: 1,
         bedrooms: 2,
         squareKm: 1.2,
-        location: "Gullele, Addis Ababa",
+        location: "Gullele",
         category: "Cottage"
     },
     {
@@ -75,7 +75,7 @@ const property = [
         bathrooms: 2,
         bedrooms: 3,
         squareKm: 1.8,
-        location: "Bole, Addis Ababa",
+        location: "Bole",
         category: "Apartment"
     },
     {
@@ -88,7 +88,7 @@ const property = [
         bathrooms: 3,
         bedrooms: 4,
         squareKm: 2.3,
-        location: "Lebbu, Addis Ababa",
+        location: "Lebbu",
         category: "House"
     },
     {
@@ -101,7 +101,7 @@ const property = [
         bathrooms: 2,
         bedrooms: 3,
         squareKm: 1.9,
-        location: "Entoto, Addis Ababa",
+        location: "Entoto",
         category: "Cottage"
     },
     {
@@ -114,7 +114,7 @@ const property = [
         bathrooms: 4,
         bedrooms: 5,
         squareKm: 2.8,
-        location: "Downtown, Addis Ababa",
+        location: "Downtown",
         category: "Villa"
     },
 ];
@@ -200,11 +200,20 @@ function displayFilteredProperties(filteredProperties) {
                     <img src="${property.image}" class="card-img-top" alt="${property.title}" style="height: 300px; width: auto;  object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title mb-2">${property.title}</h5>
-                        <div class="mb-2">
-                            <span class="bg-success text-white rounded-pill px-3 py-1">${property.price}</span>
+                         <div class="mb-2">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
                         </div>
-                        <a href="property-detail.html?id=${property.id}" class="btn btn-primary">View Details</a>
-                    </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <span class="rounded bg-warning bg-opacity-10 p-2">
+                            <i class="bi bi-coin text-success px-1"></i>
+                                  <span>${property.price}</span>
+                            </span>
+                        </div> <a href="property-detail.html?id=${property.id}" class="btn btn-success rounded-pill">View Details</a>
+                    </div>   </div>
                 </div>
             </div>
         `;
