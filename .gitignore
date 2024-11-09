@@ -1,0 +1,10 @@
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Unused images or libraries
+assets/unused-images/
+scripts/old-versions/
