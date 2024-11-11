@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
     spinnerWrapperEl.style.opacity = '0'; // Set opacity to 0
     setTimeout(() => { // Fixed the arrow function syntax
         spinnerWrapperEl.style.display = 'none'; // Set display to none after 200ms
-    }, 200);
+    }, 100);
 });
 
 
